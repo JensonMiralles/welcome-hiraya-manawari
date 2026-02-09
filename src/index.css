@@ -7,7 +7,109 @@
     color-scheme: light;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-slate-950 text-slate-100 antialiased;
+    @apply bg-ivory text-charcoal antialiased font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-charcoal;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-gradient-gold bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-4xl px-6;
+  }
+
+  .container-wide {
+    @apply mx-auto max-w-7xl px-6;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities with delays */
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animate-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animate-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animate-delay-800 {
+    animation-delay: 800ms;
+  }
+
+  /* Initial opacity for animated elements */
+  .animate-initial {
+    opacity: 0;
+  }
+
+  /* Decorative flourish utility for Design 3 */
+  .flourish-line {
+    @apply relative;
+  }
+
+  .flourish-line::before,
+  .flourish-line::after {
+    content: '';
+    @apply absolute top-1/2 w-12 md:w-20 h-px bg-gold/40;
+  }
+
+  .flourish-line::before {
+    @apply right-full mr-4;
+  }
+
+  .flourish-line::after {
+    @apply left-full ml-4;
+  }
+
+  /* Hide scrollbar for horizontal scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ornamental border for Design 3 */
+  .ornamental-border {
+    @apply relative;
+  }
+
+  .ornamental-border::before {
+    content: '';
+    @apply absolute inset-4 border border-gold/20 pointer-events-none;
   }
 }
