@@ -1,6 +1,6 @@
 export function Pricing() {
   return (
-    <section id="pricing" className="relative overflow-hidden px-6 py-32">
+    <section id="pricing" className="relative px-6 py-32">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0D0C12] to-midnight" />
 
@@ -17,7 +17,8 @@ export function Pricing() {
             Choose What's Right for You
           </h2>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-warm-gray">
-            From simple elegance to fully custom design — there's a plan for every kind of celebration.
+            From simple elegance to fully custom design — there's a plan for
+            every kind of celebration.
           </p>
         </div>
 
@@ -25,10 +26,10 @@ export function Pricing() {
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
-              className={`group relative flex flex-col overflow-hidden border p-8 transition-all duration-500 ${
+              className={`group relative flex flex-col border p-8 transition-all duration-500 ${
                 tier.popular
-                  ? 'border-champagne/30 bg-gradient-to-b from-champagne/[0.08] via-midnight-200 to-midnight-200 shadow-[0_0_50px_rgba(212,175,122,0.06)]'
-                  : 'border-white/[0.06] bg-gradient-to-b from-midnight-100/60 to-midnight-200/50 hover:border-champagne/20 hover:shadow-[0_4px_30px_rgba(212,175,122,0.04)]'
+                  ? "border-champagne/30 bg-gradient-to-b from-champagne/[0.08] via-midnight-200 to-midnight-200 shadow-[0_0_50px_rgba(212,175,122,0.06)]"
+                  : "border-white/[0.06] bg-gradient-to-b from-midnight-100/60 to-midnight-200/50 hover:border-champagne/20 hover:shadow-[0_4px_30px_rgba(212,175,122,0.04)]"
               }`}
             >
               {/* Top gradient accent for popular */}
@@ -58,7 +59,7 @@ export function Pricing() {
                 <div className="mt-6">
                   {tier.startingAt && (
                     <span className="text-[10px] uppercase tracking-[0.15em] text-warm-gray">
-                      Starts at{' '}
+                      Starts at{" "}
                     </span>
                   )}
                   <span className="bg-gradient-to-b from-champagne-light to-champagne-dark bg-clip-text font-serif text-3xl font-light text-transparent">
@@ -96,7 +97,9 @@ export function Pricing() {
                     )}
                     <span
                       className={
-                        feature.included ? 'text-ivory-muted/80' : 'text-white/20'
+                        feature.included
+                          ? "text-ivory-muted/80"
+                          : "text-white/20"
                       }
                     >
                       {feature.label}
@@ -114,8 +117,8 @@ export function Pricing() {
                 <button
                   className={`w-full py-3 text-[11px] font-medium uppercase tracking-[0.2em] transition-all duration-500 ${
                     tier.popular
-                      ? 'border border-champagne/50 bg-champagne/[0.12] text-champagne hover:bg-champagne/20 hover:shadow-[0_0_20px_rgba(212,175,122,0.1)]'
-                      : 'border border-white/10 text-ivory-muted/60 hover:border-champagne/30 hover:bg-champagne/[0.05] hover:text-champagne'
+                      ? "border border-champagne/50 bg-champagne/[0.12] text-champagne hover:bg-champagne/20 hover:shadow-[0_0_20px_rgba(212,175,122,0.1)]"
+                      : "border border-white/10 text-ivory-muted/60 hover:border-champagne/30 hover:bg-champagne/[0.05] hover:text-champagne"
                   }`}
                 >
                   Get Started
@@ -130,93 +133,93 @@ export function Pricing() {
         </p>
       </div>
     </section>
-  )
+  );
 }
 
 type PricingFeature = {
-  label: string
-  included: boolean
-  detail?: string
-}
+  label: string;
+  included: boolean;
+  detail?: string;
+};
 
 type PricingTier = {
-  name: string
-  subtitle: string
-  meaning: string
-  price: string
-  startingAt?: boolean
-  popular?: boolean
-  badge?: string
-  features: PricingFeature[]
-}
+  name: string;
+  subtitle: string;
+  meaning: string;
+  price: string;
+  startingAt?: boolean;
+  popular?: boolean;
+  badge?: string;
+  features: PricingFeature[];
+};
 
 const pricingTiers: PricingTier[] = [
   {
-    name: 'Simula',
-    subtitle: 'Essential',
+    name: "Simula",
+    subtitle: "Essential",
     meaning: '"The Beginning"',
-    price: '\u20B11,499',
+    price: "\u20B11,499",
     features: [
-      { label: 'Single-page invitation', included: true },
-      { label: 'Pre-built template', included: true },
-      { label: 'RSVP form', included: true },
-      { label: 'Up to 100 guests', included: true },
-      { label: 'Basic color customization', included: true },
-      { label: 'Multi-page layout', included: false },
-      { label: 'Custom domain', included: false },
-      { label: 'Photo gallery', included: false },
+      { label: "Single-page invitation", included: true },
+      { label: "Pre-built template", included: true },
+      { label: "RSVP form", included: true },
+      { label: "Up to 100 guests", included: true },
+      { label: "Basic color customization", included: true },
+      { label: "Multi-page layout", included: false },
+      { label: "Custom domain", included: false },
+      { label: "Photo gallery", included: false },
     ],
   },
   {
-    name: 'Diwa',
-    subtitle: 'Signature',
+    name: "Diwa",
+    subtitle: "Signature",
     meaning: '"The Spirit of Love"',
-    price: '\u20B12,999',
+    price: "\u20B12,999",
     popular: true,
-    badge: 'Most Popular',
+    badge: "Most Popular",
     features: [
-      { label: 'Multi-page invitation', included: true },
-      { label: 'Premium templates', included: true },
-      { label: 'RSVP with meal choices', included: true },
-      { label: 'Up to 300 guests', included: true },
-      { label: 'Full color & font customization', included: true },
-      { label: 'Photo gallery', included: true },
-      { label: 'Background music', included: true },
-      { label: 'Custom domain', included: false },
+      { label: "Multi-page invitation", included: true },
+      { label: "Premium templates", included: true },
+      { label: "RSVP with meal choices", included: true },
+      { label: "Up to 300 guests", included: true },
+      { label: "Full color & font customization", included: true },
+      { label: "Photo gallery", included: true },
+      { label: "Background music", included: true },
+      { label: "Custom domain", included: false },
     ],
   },
   {
-    name: 'Mayumi',
-    subtitle: 'Grand',
+    name: "Mayumi",
+    subtitle: "Grand",
     meaning: '"Grace and Beauty"',
-    price: '\u20B13,999',
+    price: "\u20B13,999",
     features: [
-      { label: 'Multi-page invitation', included: true },
-      { label: 'All premium templates', included: true },
-      { label: 'Advanced RSVP management', included: true },
-      { label: 'Up to 500 guests', included: true },
-      { label: 'Full customization suite', included: true },
-      { label: 'Photo & video gallery', included: true },
-      { label: 'Background music', included: true },
-      { label: 'Custom domain', included: true },
+      { label: "Multi-page invitation", included: true },
+      { label: "All premium templates", included: true },
+      { label: "Advanced RSVP management", included: true },
+      { label: "Up to 500 guests", included: true },
+      { label: "Full customization suite", included: true },
+      { label: "Photo & video gallery", included: true },
+      { label: "Background music", included: true },
+      { label: "Custom domain", included: true },
     ],
   },
   {
-    name: 'Hiraya',
-    subtitle: 'Bespoke',
+    name: "Hiraya",
+    subtitle: "Bespoke",
     meaning: '"Dreams Fulfilled"',
-    price: '\u20B19,999',
+    price: "\u20B19,999",
     startingAt: true,
-    badge: 'Fully Custom',
+    badge: "Fully Custom",
     features: [
-      { label: 'Fully custom design', included: true },
-      { label: 'Dedicated designer', included: true },
-      { label: 'Unlimited guests', included: true },
-      { label: 'All Grand features', included: true },
-      { label: 'Custom animations', included: true },
-      { label: 'Priority support', included: true },
-      { label: 'Multiple event pages', included: true },
-      { label: 'White-glove onboarding', included: true },
+      { label: "Fully custom design", included: true },
+      { label: "Dedicated designer", included: true },
+      { label: "Unlimited guests", included: true },
+      { label: "All Grand features", included: true },
+      { label: "Custom animations", included: true },
+      { label: "Priority support", included: true },
+      { label: "Multiple event pages", included: true },
+      { label: "White-glove onboarding", included: true },
     ],
   },
-]
+];

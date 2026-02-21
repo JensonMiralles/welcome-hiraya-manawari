@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
+    <section className="relative flex min-h-screen flex-col items-center justify-center px-6">
       {/* Background gradient with warm tones */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#1A1520_0%,_#0A0A0F_70%)]" />
 

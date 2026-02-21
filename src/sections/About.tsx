@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section className="relative overflow-hidden px-6 py-32">
+    <section className="relative px-6 py-32">
       {/* Subtle warm gradient background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-200/80 to-midnight" />
 

@@ -1,6 +1,6 @@
 export function Customization() {
   return (
-    <section className="relative overflow-hidden px-6 py-32">
+    <section className="relative px-6 py-32">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-200/50 to-midnight" />
 

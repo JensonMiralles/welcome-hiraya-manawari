@@ -1,6 +1,6 @@
 export function CulturalNote() {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative px-6 py-20">
       {/* Warm centered glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[100px]" />
 
