@@ -1,9 +1,18 @@
 export function Pricing() {
   return (
-    <section id="pricing" className="px-6 py-32">
-      <div className="mx-auto max-w-6xl">
+    <section id="pricing" className="relative overflow-hidden px-6 py-32">
+      {/* Background */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0D0C12] to-midnight" />
+
+      {/* Gold glow — center top */}
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[120px]" />
+
+      {/* Rose glow — bottom */}
+      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[300px] w-[500px] -translate-x-1/2 translate-y-1/2 rounded-full bg-rose-glow/[0.025] blur-[100px]" />
+
+      <div className="relative mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">
-          <div className="h-px w-12 bg-champagne/40" />
+          <div className="h-px w-16 bg-gradient-to-r from-champagne/20 via-champagne/50 to-champagne/20" />
           <h2 className="mt-8 font-serif text-3xl font-light tracking-wide text-ivory sm:text-4xl">
             Choose What's Right for You
           </h2>
@@ -16,15 +25,20 @@ export function Pricing() {
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
-              className={`group relative flex flex-col border p-8 transition-all duration-500 ${
+              className={`group relative flex flex-col overflow-hidden border p-8 transition-all duration-500 ${
                 tier.popular
-                  ? 'border-champagne/30 bg-midnight-200'
-                  : 'border-white/[0.06] bg-midnight-200/50 hover:border-champagne/20'
+                  ? 'border-champagne/30 bg-gradient-to-b from-champagne/[0.08] via-midnight-200 to-midnight-200 shadow-[0_0_50px_rgba(212,175,122,0.06)]'
+                  : 'border-white/[0.06] bg-gradient-to-b from-midnight-100/60 to-midnight-200/50 hover:border-champagne/20 hover:shadow-[0_4px_30px_rgba(212,175,122,0.04)]'
               }`}
             >
+              {/* Top gradient accent for popular */}
+              {tier.popular && (
+                <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
+              )}
+
               {tier.badge && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="whitespace-nowrap border border-champagne/40 bg-midnight-200 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-champagne">
+                  <span className="whitespace-nowrap border border-champagne/40 bg-gradient-to-r from-midnight-200 via-midnight-100 to-midnight-200 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-champagne">
                     {tier.badge}
                   </span>
                 </div>
@@ -47,7 +61,7 @@ export function Pricing() {
                       Starts at{' '}
                     </span>
                   )}
-                  <span className="font-serif text-3xl font-light text-champagne">
+                  <span className="bg-gradient-to-b from-champagne-light to-champagne-dark bg-clip-text font-serif text-3xl font-light text-transparent">
                     {tier.price}
                   </span>
                 </div>
@@ -57,7 +71,7 @@ export function Pricing() {
                 </div>
               </div>
 
-              <div className="mt-8 h-px w-full bg-white/[0.06]" />
+              <div className="mt-8 h-px w-full bg-gradient-to-r from-transparent via-white/[0.08] to-transparent" />
 
               <ul className="mt-6 flex flex-col gap-3">
                 {tier.features.map((feature) => (
@@ -100,8 +114,8 @@ export function Pricing() {
                 <button
                   className={`w-full py-3 text-[11px] font-medium uppercase tracking-[0.2em] transition-all duration-500 ${
                     tier.popular
-                      ? 'border border-champagne/50 bg-champagne/10 text-champagne hover:bg-champagne/20'
-                      : 'border border-white/10 text-ivory-muted/60 hover:border-champagne/30 hover:text-champagne'
+                      ? 'border border-champagne/50 bg-champagne/[0.12] text-champagne hover:bg-champagne/20 hover:shadow-[0_0_20px_rgba(212,175,122,0.1)]'
+                      : 'border border-white/10 text-ivory-muted/60 hover:border-champagne/30 hover:bg-champagne/[0.05] hover:text-champagne'
                   }`}
                 >
                   Get Started

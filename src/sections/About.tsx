@@ -1,9 +1,15 @@
 export function About() {
   return (
-    <section className="px-6 py-32">
-      <div className="mx-auto max-w-5xl">
+    <section className="relative overflow-hidden px-6 py-32">
+      {/* Subtle warm gradient background */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-200/80 to-midnight" />
+
+      {/* Decorative glow */}
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[300px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[100px]" />
+
+      <div className="relative mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">
-          <div className="h-px w-12 bg-champagne/40" />
+          <div className="h-px w-16 bg-gradient-to-r from-champagne/20 via-champagne/50 to-champagne/20" />
           <h2 className="mt-8 font-serif text-3xl font-light tracking-wide text-ivory sm:text-4xl">
             For Your Special Day
           </h2>
@@ -16,12 +22,16 @@ export function About() {
         </div>
 
         <div className="mt-24 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature) => (
+          {features.map((feature, i) => (
             <div
               key={feature.title}
-              className="group flex flex-col items-center border border-white/[0.04] bg-midnight-200/50 p-8 text-center transition-all duration-500 hover:border-champagne/20 hover:bg-midnight-200"
+              className="group relative flex flex-col items-center overflow-hidden border border-white/[0.06] bg-gradient-to-b from-midnight-100/80 to-midnight-200/60 p-8 text-center transition-all duration-500 hover:border-champagne/25 hover:shadow-[0_8px_40px_rgba(212,175,122,0.06)]"
             >
-              <div className="flex h-10 w-10 items-center justify-center text-champagne/70 transition-colors duration-500 group-hover:text-champagne">
+              {/* Top accent line */}
+              <div
+                className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-champagne/[0.08] text-champagne/80 transition-all duration-500 group-hover:bg-champagne/[0.14] group-hover:text-champagne">
                 {feature.icon}
               </div>
               <h3 className="mt-6 font-serif text-lg font-medium tracking-wide text-ivory">

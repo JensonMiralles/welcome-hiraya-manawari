@@ -1,11 +1,17 @@
 export function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
-      {/* Radial vignette */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_#0A0A0F_70%)]" />
+      {/* Background gradient with warm tones */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#1A1520_0%,_#0A0A0F_70%)]" />
 
-      {/* Subtle gold glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[120px]" />
+      {/* Gold glow — center */}
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.06] blur-[150px]" />
+
+      {/* Rose glow — bottom right */}
+      <div className="pointer-events-none absolute bottom-0 right-0 h-[500px] w-[500px] translate-x-1/4 translate-y-1/4 rounded-full bg-rose-glow/[0.04] blur-[120px]" />
+
+      {/* Plum glow — top left */}
+      <div className="pointer-events-none absolute left-0 top-0 h-[400px] w-[400px] -translate-x-1/4 -translate-y-1/4 rounded-full bg-plum-light/20 blur-[100px]" />
 
       <div className="relative z-10 flex flex-col items-center text-center">
         <p className="animate-fade-in-up text-xs font-medium uppercase tracking-[0.35em] text-champagne-muted opacity-0">
@@ -16,9 +22,9 @@ export function Hero() {
           Hiraya Manawari
         </h1>
 
-        {/* Gold divider */}
+        {/* Gold divider — wider, gradient */}
         <div className="mt-8 animate-fade-in-up-delay-2 opacity-0">
-          <div className="mx-auto h-px w-24 bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
+          <div className="mx-auto h-px w-32 bg-gradient-to-r from-transparent via-champagne/70 to-transparent" />
         </div>
 
         <p className="mt-8 max-w-lg animate-fade-in-up-delay-2 font-serif text-lg font-light italic tracking-wide text-ivory-muted/70 opacity-0 sm:text-xl">
@@ -31,7 +37,7 @@ export function Hero() {
 
         <a
           href="#pricing"
-          className="mt-12 animate-fade-in-up-delay-3 border border-champagne/40 px-8 py-3 text-xs font-medium uppercase tracking-[0.25em] text-champagne opacity-0 transition-all duration-500 hover:border-champagne hover:bg-champagne/10 hover:shadow-[0_0_30px_rgba(212,175,122,0.1)]"
+          className="mt-12 animate-fade-in-up-delay-3 border border-champagne/40 bg-champagne/[0.05] px-8 py-3 text-xs font-medium uppercase tracking-[0.25em] text-champagne opacity-0 transition-all duration-500 hover:border-champagne hover:bg-champagne/15 hover:shadow-[0_0_40px_rgba(212,175,122,0.15)]"
         >
           View Plans
         </a>
@@ -41,7 +47,7 @@ export function Hero() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in-up-delay-3 opacity-0">
         <div className="flex flex-col items-center gap-2">
           <span className="text-[10px] uppercase tracking-[0.3em] text-warm-gray">Scroll</span>
-          <div className="h-8 w-px bg-gradient-to-b from-champagne/30 to-transparent" />
+          <div className="h-8 w-px bg-gradient-to-b from-champagne/40 to-transparent" />
         </div>
       </div>
     </section>

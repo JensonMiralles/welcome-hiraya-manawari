@@ -23,6 +23,15 @@ module.exports = {
         warm: {
           gray: '#6B6560',
         },
+        rose: {
+          warm: '#8B6B6B',
+          muted: '#6B4F4F',
+          glow: '#A07070',
+        },
+        plum: {
+          DEFAULT: '#2A1F2E',
+          light: '#3D2E42',
+        },
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
