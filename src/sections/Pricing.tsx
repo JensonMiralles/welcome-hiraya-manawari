@@ -20,6 +20,26 @@ export function Pricing() {
             From simple elegance to fully custom design — there's a plan for
             every kind of celebration.
           </p>
+
+          {/* Free to start callout */}
+          <div className="mt-8 inline-flex items-center gap-3 border border-champagne/20 bg-champagne/[0.04] px-6 py-3">
+            <div className="flex h-6 w-6 items-center justify-center rounded-full border border-champagne/30 bg-champagne/10">
+              <svg
+                className="h-3 w-3 text-champagne"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <path d="M2.5 6.5L5 9L9.5 3.5" />
+              </svg>
+            </div>
+            <p className="text-xs tracking-wide text-ivory-muted/80">
+              <span className="font-semibold text-champagne">Start for free</span>
+              <span className="mx-2 text-white/20">·</span>
+              Only pay when you're ready to publish
+            </p>
+          </div>
         </div>
 
         <div className="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -130,6 +150,8 @@ export function Pricing() {
 
         <p className="mt-12 text-center text-xs text-warm-gray">
           All plans are one-time payments. No subscriptions, no hidden fees.
+          <br />
+          <span className="text-ivory-muted/60">Design your invitation for free — you only pay when you publish.</span>
         </p>
       </div>
     </section>

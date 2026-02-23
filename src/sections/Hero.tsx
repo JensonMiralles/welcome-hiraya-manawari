@@ -39,8 +39,11 @@ export function Hero() {
           href="#pricing"
           className="mt-12 animate-fade-in-up-delay-3 border border-champagne/40 bg-champagne/[0.05] px-8 py-3 text-xs font-medium uppercase tracking-[0.25em] text-champagne opacity-0 transition-all duration-500 hover:border-champagne hover:bg-champagne/15 hover:shadow-[0_0_40px_rgba(212,175,122,0.15)]"
         >
-          View Plans
+          Get Started Free
         </a>
+        <p className="mt-3 animate-fade-in-up-delay-3 text-[11px] tracking-wide text-warm-gray opacity-0">
+          No payment required until you publish
+        </p>
       </div>
 
       {/* Scroll hint */}
