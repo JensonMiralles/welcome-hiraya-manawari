@@ -2,12 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hiraya Manawari — Digital Wedding Invitations | Elegant Online RSVP & Custom Domains</title>
     <meta name="description" content="Hiraya Manawari — Beautifully crafted digital wedding invitations. Elegant templates, RSVP management, and custom domains for your perfect day." />
+    <meta name="author" content="Hiraya Manawari" />
+    <meta name="keywords" content="digital wedding invitations, online wedding RSVP, custom wedding website, Filipino wedding invitations, elegant wedding templates" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="canonical" href="https://hirayamanawari.wedding/" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hiraya Manawari — Digital Wedding Invitations" />
+    <meta property="og:description" content="Beautifully crafted digital wedding invitations. Elegant templates, RSVP management, and custom domains for your perfect day." />
+    <meta property="og:url" content="https://hirayamanawari.wedding/" />
+    <meta property="og:site_name" content="Hiraya Manawari" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://hirayamanawari.wedding/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hiraya Manawari — Digital Wedding Invitations" />
+    <meta name="twitter:description" content="Beautifully crafted digital wedding invitations. Elegant templates, RSVP management, and custom domains for your perfect day." />
+    <meta name="twitter:image" content="https://hirayamanawari.wedding/og-image.png" />
+
+    <!-- Prevent indexing on non-production environments -->
+    <script>
+      if (window.location.hostname !== 'hirayamanawari.wedding') {
+        var meta = document.createElement('meta');
+        meta.name = 'robots';
+        meta.content = 'noindex, nofollow';
+        document.head.appendChild(meta);
+      }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Hiraya Manawari",
+          "url": "https://hirayamanawari.wedding",
+          "description": "Beautifully crafted digital wedding invitations with elegant templates, RSVP management, and custom domains.",
+          "logo": "https://hirayamanawari.wedding/vite.svg"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Hiraya Manawari",
+          "url": "https://hirayamanawari.wedding"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Hiraya Manawari Digital Wedding Invitations",
+          "description": "Elegant digital wedding invitations with RSVP management, custom domains, and beautiful templates designed for modern couples.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Hiraya Manawari"
+          },
+          "serviceType": "Digital Wedding Invitation Service",
+          "url": "https://hirayamanawari.wedding"
+        }
+      ]
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Hiraya Manawari — Wedding Invitations</title>
   </head>
   <body>
     <div id="root"></div>

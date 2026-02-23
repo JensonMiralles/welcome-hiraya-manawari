@@ -9,7 +9,7 @@ import { Footer } from './sections/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-midnight text-ivory-muted">
+    <main className="min-h-screen bg-midnight text-ivory-muted">
       <Hero />
       <About />
       <Showcase />
@@ -18,7 +18,7 @@ function App() {
       <CulturalNote />
       <Pricing />
       <Footer />
-    </div>
+    </main>
   )
 }
 

@@ -1,0 +1,16 @@
+{
+  "name": "Hiraya Manawari — Digital Wedding Invitations",
+  "short_name": "Hiraya Manawari",
+  "description": "Beautifully crafted digital wedding invitations with elegant templates, RSVP management, and custom domains.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

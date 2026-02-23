@@ -22,7 +22,7 @@ export function About() {
         </div>
 
         <div className="mt-24 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature, i) => (
+          {features.map((feature) => (
             <div
               key={feature.title}
               className="group relative flex flex-col items-center overflow-hidden border border-white/[0.06] bg-gradient-to-b from-midnight-100/80 to-midnight-200/60 p-8 text-center transition-all duration-500 hover:border-champagne/25 hover:shadow-[0_8px_40px_rgba(212,175,122,0.06)]"
