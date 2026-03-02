@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden px-6 pb-12 pt-20">
       {/* Subtle warm glow */}
-      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[200px] w-[400px] -translate-x-1/2 translate-y-1/2 rounded-full bg-champagne/[0.02] blur-[80px]" />
+      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[180px] w-[350px] -translate-x-1/2 translate-y-1/2 rounded-full bg-champagne/[0.015] blur-[100px] animate-glow-breathe-slow" />
 
       <div className="relative mx-auto max-w-5xl">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-champagne/25 to-transparent" />

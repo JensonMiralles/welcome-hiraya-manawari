@@ -5,10 +5,10 @@ export function Showcase() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
       {/* Rose accent glow — left */}
-      <div className="pointer-events-none absolute left-0 top-1/2 h-[500px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-rose-glow/[0.03] blur-[120px]" />
+      <div className="pointer-events-none absolute left-0 top-1/2 h-[400px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-rose-glow/[0.02] blur-[140px] animate-glow-breathe-slow" />
 
       {/* Gold accent glow — right */}
-      <div className="pointer-events-none absolute right-0 top-1/3 h-[400px] w-[400px] translate-x-1/3 rounded-full bg-champagne/[0.03] blur-[100px]" />
+      <div className="pointer-events-none absolute right-0 top-1/3 h-[350px] w-[350px] translate-x-1/3 rounded-full bg-champagne/[0.02] blur-[120px] animate-glow-breathe" />
 
       <div className="relative mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">

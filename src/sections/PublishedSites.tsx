@@ -5,10 +5,10 @@ export function PublishedSites() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
       {/* Champagne glow — left */}
-      <div className="pointer-events-none absolute left-0 top-1/3 h-[400px] w-[400px] -translate-x-1/4 rounded-full bg-champagne/[0.04] blur-[120px]" />
+      <div className="pointer-events-none absolute left-0 top-1/3 h-[350px] w-[350px] -translate-x-1/4 rounded-full bg-champagne/[0.025] blur-[140px] animate-glow-breathe-slow" />
 
       {/* Rose glow — right */}
-      <div className="pointer-events-none absolute bottom-1/4 right-0 h-[350px] w-[350px] translate-x-1/4 rounded-full bg-rose-glow/[0.04] blur-[100px]" />
+      <div className="pointer-events-none absolute bottom-1/4 right-0 h-[300px] w-[300px] translate-x-1/4 rounded-full bg-rose-glow/[0.025] blur-[120px] animate-glow-breathe" />
 
       <div className="relative mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">
