@@ -11,19 +11,17 @@ import { Footer } from "./sections/Footer";
 
 function App() {
   return (
-    <>
-      <main className="min-h-screen bg-midnight text-ivory-muted">
-        <Hero />
-        <About />
-        <Showcase />
-        <Customization />
-        <PublishedSites />
-        <CulturalNote />
-        <Pricing />
-        <Footer />
-      </main>
+    <main className="min-h-screen bg-midnight text-ivory-muted">
+      <Hero />
+      <About />
+      <Showcase />
+      <Customization />
+      <PublishedSites />
+      <CulturalNote />
+      <Pricing />
+      <Footer />
       <Analytics />
-    </>
+    </main>
   );
 }
 
