@@ -136,15 +136,32 @@ export function Pricing() {
               </ul>
 
               <div className="mt-auto pt-8">
-                <button
-                  className={`w-full py-3 text-[11px] font-medium uppercase tracking-[0.2em] transition-all duration-500 ${
+                <a
+                  href={
+                    import.meta.env.VITE_SUBDOMAIN
+                      ? import.meta.env.VITE_SUBDOMAIN
+                      : "#pricing"
+                  }
+                  className={`w-full block text-center py-3 text-[11px] font-medium uppercase tracking-[0.2em] transition-all duration-500 ${
                     tier.popular
                       ? "border border-champagne/50 bg-champagne/[0.12] text-champagne hover:bg-champagne/20 hover:shadow-[0_0_20px_rgba(212,175,122,0.1)]"
                       : "border border-white/10 text-ivory-muted/60 hover:border-champagne/30 hover:bg-champagne/[0.05] hover:text-champagne"
                   }`}
+                  onClick={(e) => {
+                    const href = import.meta.env.VITE_SUBDOMAIN
+                      ? import.meta.env.VITE_SUBDOMAIN
+                      : "#pricing";
+                    if (href.startsWith("#")) {
+                      e.preventDefault();
+                      const element = document.querySelector(href);
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }
+                  }}
                 >
                   Get Started
-                </button>
+                </a>
               </div>
             </div>
           ))}
