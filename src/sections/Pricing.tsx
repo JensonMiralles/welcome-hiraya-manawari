@@ -1,6 +1,6 @@
 export function Pricing() {
   return (
-    <section id="pricing" className="relative px-6 py-32">
+    <section id="pricing" className="relative overflow-hidden px-6 py-32">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0D0C12] to-midnight" />
 
@@ -35,7 +35,9 @@ export function Pricing() {
               </svg>
             </div>
             <p className="text-xs tracking-wide text-ivory-muted/80">
-              <span className="font-semibold text-champagne">Start for free</span>
+              <span className="font-semibold text-champagne">
+                Start for free
+              </span>
               <span className="mx-2 text-white/20">·</span>
               Only pay when you're ready to publish
             </p>
@@ -151,7 +153,9 @@ export function Pricing() {
         <p className="mt-12 text-center text-xs text-warm-gray">
           All plans are one-time payments. No subscriptions, no hidden fees.
           <br />
-          <span className="text-ivory-muted/60">Design your invitation for free — you only pay when you publish.</span>
+          <span className="text-ivory-muted/60">
+            Design your invitation for free — you only pay when you publish.
+          </span>
         </p>
       </div>
     </section>

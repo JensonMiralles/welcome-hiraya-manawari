@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center px-6">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
       {/* Background gradient with warm tones */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#1A1520_0%,_#0A0A0F_70%)]" />
 
@@ -32,7 +32,9 @@ export function Hero() {
         </p>
 
         <p className="mt-4 max-w-md animate-fade-in-up-delay-3 text-sm leading-relaxed text-warm-gray opacity-0">
-          Made by Filipinos, for Filipinos. Digital wedding invitations as beautiful as your love story — from the first invite to the last dance.
+          Made by Filipinos, for Filipinos. Digital wedding invitations as
+          beautiful as your love story — from the first invite to the last
+          dance.
         </p>
 
         <a
@@ -49,10 +51,12 @@ export function Hero() {
       {/* Scroll hint */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in-up-delay-3 opacity-0">
         <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-warm-gray">Scroll</span>
+          <span className="text-[10px] uppercase tracking-[0.3em] text-warm-gray">
+            Scroll
+          </span>
           <div className="h-8 w-px bg-gradient-to-b from-champagne/40 to-transparent" />
         </div>
       </div>
     </section>
-  )
+  );
 }

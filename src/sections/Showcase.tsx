@@ -1,6 +1,6 @@
 export function Showcase() {
   return (
-    <section className="relative px-6 py-32">
+    <section className="relative overflow-hidden px-6 py-32">
       {/* Warm background band */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0E0D14] to-midnight" />
 
@@ -17,7 +17,8 @@ export function Showcase() {
             Everything Your Invitation Needs
           </h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-warm-gray sm:text-base">
-            From the hero that welcomes your guests to the closing that leaves them inspired — every section is crafted for Filipino weddings.
+            From the hero that welcomes your guests to the closing that leaves
+            them inspired — every section is crafted for Filipino weddings.
           </p>
         </div>
 
@@ -69,93 +70,93 @@ export function Showcase() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 const showcaseSections = [
   {
-    icon: '\u2726',
-    title: 'Hero',
+    icon: "\u2726",
+    title: "Hero",
     description:
-      'A stunning full-screen welcome with your names, wedding date, monogram, and a countdown timer to your big day.',
-    variants: '3 styles',
+      "A stunning full-screen welcome with your names, wedding date, monogram, and a countdown timer to your big day.",
+    variants: "3 styles",
   },
   {
-    icon: '\u2661',
-    title: 'Love Story',
+    icon: "\u2661",
+    title: "Love Story",
     description:
-      'Share your journey as a couple — from how you met to the proposal — with a beautiful timeline of milestone moments and photos.',
+      "Share your journey as a couple — from how you met to the proposal — with a beautiful timeline of milestone moments and photos.",
   },
   {
-    icon: '\u25C7',
-    title: 'Entourage',
+    icon: "\u25C7",
+    title: "Entourage",
     description:
-      'Honor your principal sponsors, ninongs, ninangs, and bridal party with a dedicated section featuring names, roles, and photos.',
+      "Honor your principal sponsors, ninongs, ninangs, and bridal party with a dedicated section featuring names, roles, and photos.",
   },
   {
-    icon: '\u25C8',
-    title: 'Venue',
+    icon: "\u25C8",
+    title: "Venue",
     description:
-      'Display your ceremony and reception venues with photos, addresses, times, and direct links to maps for easy navigation.',
+      "Display your ceremony and reception venues with photos, addresses, times, and direct links to maps for easy navigation.",
   },
   {
-    icon: '\u25B8',
-    title: 'Program Timeline',
+    icon: "\u25B8",
+    title: "Program Timeline",
     description:
-      'Walk guests through the day — ceremony, cocktails, dinner, first dance, and more — with icons and timing for each moment.',
-    variants: '2 styles',
+      "Walk guests through the day — ceremony, cocktails, dinner, first dance, and more — with icons and timing for each moment.",
+    variants: "2 styles",
   },
   {
-    icon: '\u25AA',
-    title: 'Photo & Video Gallery',
+    icon: "\u25AA",
+    title: "Photo & Video Gallery",
     description:
-      'Showcase your engagement photos or prenup video in a bento grid layout with a full-screen lightbox viewer.',
-    variants: '2 styles',
+      "Showcase your engagement photos or prenup video in a bento grid layout with a full-screen lightbox viewer.",
+    variants: "2 styles",
   },
   {
-    icon: '\u25FB',
-    title: 'Dress Code',
+    icon: "\u25FB",
+    title: "Dress Code",
     description:
-      'Guide your guests with color palettes and attire suggestions — separate guidelines for ladies and gentlemen, by guest group.',
+      "Guide your guests with color palettes and attire suggestions — separate guidelines for ladies and gentlemen, by guest group.",
   },
   {
-    icon: '\u2713',
-    title: 'RSVP',
+    icon: "\u2713",
+    title: "RSVP",
     description:
-      'Collect responses with accept/decline, number of guests, meal preferences, dietary restrictions, and personal messages.',
-    variants: '2 styles',
+      "Collect responses with accept/decline, number of guests, meal preferences, dietary restrictions, and personal messages.",
+    variants: "2 styles",
   },
   {
-    icon: '?',
-    title: 'FAQ',
+    icon: "?",
+    title: "FAQ",
     description:
-      'Answer common questions about parking, gifts, attire, and more — in an accordion or card-based layout.',
-    variants: '2 styles',
+      "Answer common questions about parking, gifts, attire, and more — in an accordion or card-based layout.",
+    variants: "2 styles",
   },
   {
-    icon: '\u2727',
-    title: 'Personal Message',
+    icon: "\u2727",
+    title: "Personal Message",
     description:
-      'A heartfelt message from the couple to their guests, accompanied by a live countdown timer to the wedding day.',
+      "A heartfelt message from the couple to their guests, accompanied by a live countdown timer to the wedding day.",
   },
   {
-    icon: '\u2766',
-    title: 'Closing',
+    icon: "\u2766",
+    title: "Closing",
     description:
-      'End with your initials, a closing message, your wedding hashtag, and social media links — elegantly framed.',
-    variants: '3 styles',
+      "End with your initials, a closing message, your wedding hashtag, and social media links — elegantly framed.",
+    variants: "3 styles",
   },
   {
-    icon: '\u26BF',
-    title: 'Invite Code Protection',
+    icon: "\u26BF",
+    title: "Invite Code Protection",
     description:
-      'Keep your invitation private with an invite code that guests must enter before they can view the full invitation.',
+      "Keep your invitation private with an invite code that guests must enter before they can view the full invitation.",
   },
-]
+];
 
 const showcaseStats = [
-  { value: '19', label: 'Section Variants' },
-  { value: '8', label: 'Font Presets' },
-  { value: '3', label: 'Color Themes' },
-  { value: '40+', label: 'Timeline Icons' },
-]
+  { value: "19", label: "Section Variants" },
+  { value: "8", label: "Font Presets" },
+  { value: "3", label: "Color Themes" },
+  { value: "40+", label: "Timeline Icons" },
+];

@@ -1,6 +1,6 @@
 export function CulturalNote() {
   return (
-    <section className="relative px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-20">
       {/* Warm centered glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[100px]" />
 
@@ -19,8 +19,8 @@ export function CulturalNote() {
           </div>
           <p className="mt-6 text-sm leading-relaxed text-ivory-muted/60">
             An ancient Filipino word meaning "the dreams and wishes of the heart
-            shall be fulfilled." This is the spirit of every wedding — the fulfillment
-            of a dream prayed for and waited upon.
+            shall be fulfilled." This is the spirit of every wedding — the
+            fulfillment of a dream prayed for and waited upon.
           </p>
 
           {/* Bottom ornamental accent */}
@@ -28,5 +28,5 @@ export function CulturalNote() {
         </div>
       </div>
     </section>
-  )
+  );
 }

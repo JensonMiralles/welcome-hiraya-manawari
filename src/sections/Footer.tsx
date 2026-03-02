@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="relative px-6 pb-12 pt-20">
+    <footer className="relative overflow-hidden px-6 pb-12 pt-20">
       {/* Subtle warm glow */}
       <div className="pointer-events-none absolute bottom-0 left-1/2 h-[200px] w-[400px] -translate-x-1/2 translate-y-1/2 rounded-full bg-champagne/[0.02] blur-[80px]" />
 
@@ -14,10 +14,11 @@ export function Footer() {
             Made by Filipinos, for Filipinos.
           </p>
           <p className="text-[11px] tracking-wide text-warm-gray">
-            &copy; {new Date().getFullYear()} Hiraya Manawari. All rights reserved.
+            &copy; {new Date().getFullYear()} Hiraya Manawari. All rights
+            reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

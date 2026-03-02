@@ -1,6 +1,6 @@
 export function Customization() {
   return (
-    <section className="relative px-6 py-32">
+    <section className="relative overflow-hidden px-6 py-32">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-200/50 to-midnight" />
 
@@ -14,7 +14,8 @@ export function Customization() {
             Make It Yours
           </h2>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-warm-gray">
-            Every couple is unique. Customize every detail — from fonts and colors to section order and layout — using our drag-and-drop editor.
+            Every couple is unique. Customize every detail — from fonts and
+            colors to section order and layout — using our drag-and-drop editor.
           </p>
         </div>
 
@@ -53,54 +54,85 @@ export function Customization() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 const customizationFeatures: {
-  title: string
-  description: string
-  icon: React.ReactNode
-  options?: string[]
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  options?: string[];
 }[] = [
   {
-    title: 'Drag-and-Drop Editor',
+    title: "Drag-and-Drop Editor",
     description:
-      'Reorder, add, or remove sections with a visual editor. See changes in real time with the live preview.',
+      "Reorder, add, or remove sections with a visual editor. See changes in real time with the live preview.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-5 w-5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        className="h-5 w-5"
+      >
         <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
       </svg>
     ),
   },
   {
-    title: 'Font Presets',
+    title: "Font Presets",
     description:
-      'Choose from 8 curated font combinations — from timeless serifs to modern minimal — each designed for readability and elegance.',
+      "Choose from 8 curated font combinations — from timeless serifs to modern minimal — each designed for readability and elegance.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-5 w-5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        className="h-5 w-5"
+      >
         <path d="M4 7V4h16v3M9 20h6M12 4v16" />
       </svg>
     ),
-    options: ['Timeless', 'Classic', 'Editorial', 'Romantic', 'Art Deco', 'Modern Minimal'],
+    options: [
+      "Timeless",
+      "Classic",
+      "Editorial",
+      "Romantic",
+      "Art Deco",
+      "Modern Minimal",
+    ],
   },
   {
-    title: 'Color Themes',
+    title: "Color Themes",
     description:
-      'Start with a pre-built theme or customize background and text colors for every section individually.',
+      "Start with a pre-built theme or customize background and text colors for every section individually.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-5 w-5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        className="h-5 w-5"
+      >
         <circle cx="12" cy="12" r="9" />
         <circle cx="12" cy="12" r="4" />
       </svg>
     ),
-    options: ['Elegant Classic', 'Floral Garden', 'Modern Minimal'],
+    options: ["Elegant Classic", "Floral Garden", "Modern Minimal"],
   },
   {
-    title: 'Templates',
+    title: "Templates",
     description:
-      'Choose a starting point that sets the mood — from sophisticated gold tones to soft floral palettes — then make it your own.',
+      "Choose a starting point that sets the mood — from sophisticated gold tones to soft floral palettes — then make it your own.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-5 w-5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        className="h-5 w-5"
+      >
         <rect x="3" y="3" width="7" height="9" rx="1" />
         <rect x="14" y="3" width="7" height="5" rx="1" />
         <rect x="14" y="12" width="7" height="9" rx="1" />
@@ -109,24 +141,36 @@ const customizationFeatures: {
     ),
   },
   {
-    title: 'Per-Section Colors',
+    title: "Per-Section Colors",
     description:
-      'Set unique background and text colors for each section — create contrast between your hero, timeline, gallery, and more.',
+      "Set unique background and text colors for each section — create contrast between your hero, timeline, gallery, and more.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-5 w-5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        className="h-5 w-5"
+      >
         <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
       </svg>
     ),
   },
   {
-    title: 'Content Editor',
+    title: "Content Editor",
     description:
-      'Customize every heading, message, label, and placeholder text. Write your own personal message, FAQ answers, and more.',
+      "Customize every heading, message, label, and placeholder text. Write your own personal message, FAQ answers, and more.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-5 w-5">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        className="h-5 w-5"
+      >
         <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
         <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
       </svg>
     ),
   },
-]
+];

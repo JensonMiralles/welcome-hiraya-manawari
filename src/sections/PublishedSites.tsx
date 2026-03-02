@@ -1,6 +1,6 @@
 export function PublishedSites() {
   return (
-    <section className="relative px-6 py-32">
+    <section className="relative overflow-hidden px-6 py-32">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0D0C13] to-midnight" />
 
@@ -17,7 +17,8 @@ export function PublishedSites() {
             Real Invitations, Real Couples
           </h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-warm-gray sm:text-base">
-            See how couples have used Hiraya Manawari to create stunning wedding invitations that reflect their unique love stories.
+            See how couples have used Hiraya Manawari to create stunning wedding
+            invitations that reflect their unique love stories.
           </p>
         </div>
 
@@ -34,13 +35,21 @@ export function PublishedSites() {
               {/* Image placeholder */}
               <div className="relative aspect-[4/3] overflow-hidden bg-midnight-200/60">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-2xl text-champagne/20">{site.monogram}</span>
+                  <span className="font-serif text-2xl text-champagne/20">
+                    {site.monogram}
+                  </span>
                 </div>
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 flex items-center justify-center bg-midnight/60 opacity-0 backdrop-blur-sm transition-opacity duration-500 group-hover:opacity-100">
                   <span className="flex items-center gap-2 border border-champagne/30 bg-champagne/[0.08] px-5 py-2.5 text-xs uppercase tracking-[0.15em] text-champagne">
                     View Invitation
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-3.5 w-3.5">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      className="h-3.5 w-3.5"
+                    >
                       <path d="M7 17L17 7M17 7H7M17 7v10" />
                     </svg>
                   </span>
@@ -84,63 +93,63 @@ export function PublishedSites() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 const publishedSites: {
-  couple: string
-  monogram: string
-  date: string
-  location: string
-  url: string
-  tags: string[]
+  couple: string;
+  monogram: string;
+  date: string;
+  location: string;
+  url: string;
+  tags: string[];
 }[] = [
   {
-    couple: 'Marco & Isabella',
-    monogram: 'M & I',
-    date: 'March 2026',
-    location: 'Tagaytay',
-    url: '#',
-    tags: ['Elegant Classic', 'Timeless', 'Bilingual'],
+    couple: "Marco & Isabella",
+    monogram: "M & I",
+    date: "March 2026",
+    location: "Tagaytay",
+    url: "#",
+    tags: ["Elegant Classic", "Timeless", "Bilingual"],
   },
   {
-    couple: 'Rafael & Camille',
-    monogram: 'R & C',
-    date: 'April 2026',
-    location: 'Cebu',
-    url: '#',
-    tags: ['Floral Garden', 'Romantic', 'Full Entourage'],
+    couple: "Rafael & Camille",
+    monogram: "R & C",
+    date: "April 2026",
+    location: "Cebu",
+    url: "#",
+    tags: ["Floral Garden", "Romantic", "Full Entourage"],
   },
   {
-    couple: 'Andres & Sofia',
-    monogram: 'A & S',
-    date: 'May 2026',
-    location: 'Manila',
-    url: '#',
-    tags: ['Modern Minimal', 'Editorial', 'Video Gallery'],
+    couple: "Andres & Sofia",
+    monogram: "A & S",
+    date: "May 2026",
+    location: "Manila",
+    url: "#",
+    tags: ["Modern Minimal", "Editorial", "Video Gallery"],
   },
   {
-    couple: 'Gabriel & Lucia',
-    monogram: 'G & L',
-    date: 'June 2026',
-    location: 'Palawan',
-    url: '#',
-    tags: ['Art Deco', 'Classic', 'Invite Code'],
+    couple: "Gabriel & Lucia",
+    monogram: "G & L",
+    date: "June 2026",
+    location: "Palawan",
+    url: "#",
+    tags: ["Art Deco", "Classic", "Invite Code"],
   },
   {
-    couple: 'Diego & Mariana',
-    monogram: 'D & M',
-    date: 'February 2026',
-    location: 'Batangas',
-    url: '#',
-    tags: ['Elegant Classic', 'Romantic', 'Love Story'],
+    couple: "Diego & Mariana",
+    monogram: "D & M",
+    date: "February 2026",
+    location: "Batangas",
+    url: "#",
+    tags: ["Elegant Classic", "Romantic", "Love Story"],
   },
   {
-    couple: 'Joaquin & Elena',
-    monogram: 'J & E',
-    date: 'July 2026',
-    location: 'Siargao',
-    url: '#',
-    tags: ['Modern Minimal', 'Editorial', 'Bento Gallery'],
+    couple: "Joaquin & Elena",
+    monogram: "J & E",
+    date: "July 2026",
+    location: "Siargao",
+    url: "#",
+    tags: ["Modern Minimal", "Editorial", "Bento Gallery"],
   },
-]
+];
