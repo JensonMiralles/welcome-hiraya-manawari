@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
@@ -11,17 +11,19 @@ import { Footer } from "./sections/Footer";
 
 function App() {
   return (
-    <main className="min-h-screen bg-midnight text-ivory-muted">
-      <Hero />
-      <About />
-      <Showcase />
-      <Customization />
-      <PublishedSites />
-      <CulturalNote />
-      <Pricing />
-      <Footer />
+    <>
+      <main className="min-h-screen bg-midnight text-ivory-muted">
+        <Hero />
+        <About />
+        <Showcase />
+        <Customization />
+        <PublishedSites />
+        <CulturalNote />
+        <Pricing />
+        <Footer />
+      </main>
       <Analytics />
-    </main>
+    </>
   );
 }
 
