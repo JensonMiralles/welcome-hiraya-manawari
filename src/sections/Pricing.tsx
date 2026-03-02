@@ -2,7 +2,7 @@ export function Pricing() {
   return (
     <section id="pricing" className="relative overflow-hidden px-6 py-32">
       {/* Background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0D0C12] to-midnight" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
       {/* Gold glow — center top */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[120px]" />

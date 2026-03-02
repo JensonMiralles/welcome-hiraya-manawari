@@ -2,7 +2,7 @@ export function PublishedSites() {
   return (
     <section className="relative overflow-hidden px-6 py-32">
       {/* Background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0D0C13] to-midnight" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
       {/* Champagne glow — left */}
       <div className="pointer-events-none absolute left-0 top-1/3 h-[400px] w-[400px] -translate-x-1/4 rounded-full bg-champagne/[0.04] blur-[120px]" />

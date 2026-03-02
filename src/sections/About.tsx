@@ -1,11 +1,10 @@
 export function About() {
   return (
-    <section className="relative overflow-hidden px-6 py-32">
-      {/* Subtle warm gradient background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-200/80 to-midnight" />
-
-      {/* Decorative glow */}
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[300px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.03] blur-[100px]" />
+    <section className="relative px-6 py-32">
+      {/* Decorative glow — extends above section to blend with Hero */}
+      <div className="pointer-events-none absolute inset-x-0 -top-32 h-[400px] overflow-hidden">
+        <div className="absolute left-1/2 top-0 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-champagne/[0.03] blur-[100px]" />
+      </div>
 
       <div className="relative mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">

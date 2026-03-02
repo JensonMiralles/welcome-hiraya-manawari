@@ -2,7 +2,7 @@ export function Showcase() {
   return (
     <section className="relative overflow-hidden px-6 py-32">
       {/* Warm background band */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-[#0E0D14] to-midnight" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
       {/* Rose accent glow — left */}
       <div className="pointer-events-none absolute left-0 top-1/2 h-[500px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-rose-glow/[0.03] blur-[120px]" />

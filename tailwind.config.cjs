@@ -7,21 +7,21 @@ module.exports = {
         champagne: {
           DEFAULT: '#D4AF7A',
           light: '#E1C699',
-          dark: '#B8945F',
-          muted: '#A08660',
+          dark: '#C9A066',
+          muted: 'rgba(212, 175, 122, 0.3)',
         },
         midnight: {
-          DEFAULT: '#0A0A0F',
-          100: '#1A1A24',
-          200: '#12121A',
-          300: '#0F0F17',
+          DEFAULT: '#1A1A1A',
+          100: '#252525',
+          200: '#212121',
+          300: '#141414',
         },
         ivory: {
-          DEFAULT: '#F5F0EB',
+          DEFAULT: '#F6F2ED',
           muted: '#E8E0D8',
         },
         warm: {
-          gray: '#6B6560',
+          gray: 'rgba(246, 242, 237, 0.4)',
         },
         rose: {
           warm: '#8B6B6B',
@@ -29,8 +29,8 @@ module.exports = {
           glow: '#A07070',
         },
         plum: {
-          DEFAULT: '#2A1F2E',
-          light: '#3D2E42',
+          DEFAULT: '#2A2A2A',
+          light: '#333333',
         },
       },
       fontFamily: {
