@@ -32,14 +32,24 @@ export function PublishedSites() {
               rel="noopener noreferrer"
               className="group relative overflow-hidden border border-white/[0.06] bg-gradient-to-br from-midnight-100/60 to-midnight-200/40 transition-all duration-500 hover:border-champagne/25 hover:shadow-[0_8px_40px_rgba(212,175,122,0.06)]"
             >
-              {/* Image placeholder */}
+              {/* Background Image */}
               <div className="relative aspect-[4/3] overflow-hidden bg-midnight-200/60">
+                <img
+                  src={site.backgroundImage}
+                  alt={site.couple}
+                  className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                {/* Gradient overlay — always visible, blends image into theme */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-midnight via-midnight/50 to-transparent" />
+                {/* Subtle vignette for depth */}
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(26,26,26,0.5)_100%)]" />
+                {/* Monogram watermark */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-2xl text-champagne/20">
+                  <span className="font-serif text-3xl text-champagne/10 transition-opacity duration-500 group-hover:opacity-0">
                     {site.monogram}
                   </span>
                 </div>
-                {/* Overlay on hover */}
+                {/* Hover overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-midnight/60 opacity-0 backdrop-blur-sm transition-opacity duration-500 group-hover:opacity-100">
                   <span className="flex items-center gap-2 border border-champagne/30 bg-champagne/[0.08] px-5 py-2.5 text-xs uppercase tracking-[0.15em] text-champagne">
                     View Invitation
@@ -102,6 +112,7 @@ const publishedSites: {
   date: string;
   location: string;
   url: string;
+  backgroundImage: string;
   tags: string[];
 }[] = [
   {
@@ -110,6 +121,7 @@ const publishedSites: {
     date: "December 28, 2026",
     location: "Tagaytay",
     url: "https://app.hirayaweddings.com/view/jenson-and-jade",
+    backgroundImage: "/assets/jenson-and-jade-sample.png",
     tags: ["Modern Minimal", "Clean", "Contemporary"],
   },
 ];
