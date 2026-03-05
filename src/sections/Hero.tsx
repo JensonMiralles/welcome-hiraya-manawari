@@ -36,8 +36,7 @@ export function Hero() {
 
         <p className="mt-4 max-w-md animate-fade-in-up-delay-3 text-sm leading-relaxed text-ivory/60 opacity-0">
           Made by Filipinos, for Filipinos. Digital wedding invitations as
-          beautiful as your love story — from the first invite to the last
-          dance.
+          beautiful as your love story.
         </p>
 
         <a
