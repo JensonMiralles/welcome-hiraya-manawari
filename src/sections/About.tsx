@@ -48,7 +48,7 @@ const features = [
   {
     title: "Visual Editor",
     description:
-      "Design your invitation with an intuitive drag-and-drop editor. No coding required.",
+      "Design your invitation with an intuitive drag-and-drop editor. Customize fonts, colors, layout, and content — if you can imagine it, you can build it. No coding required.",
     icon: (
       <svg
         viewBox="0 0 24 24"
