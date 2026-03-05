@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
+import { OurStory } from "./sections/OurStory";
 import { Showcase } from "./sections/Showcase";
 import { Customization } from "./sections/Customization";
 import { PublishedSites } from "./sections/PublishedSites";
@@ -15,6 +16,7 @@ function App() {
       <main className="min-h-screen bg-midnight text-ivory-muted">
         <Hero />
         <About />
+        <OurStory />
         <Showcase />
         <Customization />
         <PublishedSites />
