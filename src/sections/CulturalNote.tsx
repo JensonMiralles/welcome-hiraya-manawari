@@ -1,7 +1,14 @@
 export function CulturalNote() {
   return (
     <section className="relative overflow-hidden px-6 py-20">
-      {/* Warm centered glow */}
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/cultural-note-bg.jpg')" }}
+      />
+      {/* Dark overlay gradient */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight/80 to-midnight" />
+{/* Warm centered glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(212,175,122,0.02)_0%,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-3xl text-center">
@@ -9,7 +16,7 @@ export function CulturalNote() {
           {/* Top ornamental accent */}
           <div className="mx-auto mb-8 h-px w-20 bg-gradient-to-r from-transparent via-champagne/40 to-transparent" />
 
-          <p className="font-serif text-xl font-light italic leading-relaxed tracking-wide text-champagne sm:text-2xl">
+          <p className="font-serif text-xl font-light italic leading-relaxed tracking-wide text-champagne/90 sm:text-2xl">
             "Hiraya Manawari"
           </p>
           <div className="mx-auto mt-6 flex items-center justify-center gap-3">
