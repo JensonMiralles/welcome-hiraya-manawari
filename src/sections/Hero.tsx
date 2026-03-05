@@ -1,17 +1,8 @@
 export function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
-      {/* Background gradient with warm tones */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#212121_0%,_#1A1A1A_70%)]" />
-
-      {/* Gold glow — center */}
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.04] blur-[200px] animate-glow-drift" />
-
-      {/* Rose glow — bottom right */}
-      <div className="pointer-events-none absolute bottom-0 right-0 h-[500px] w-[500px] translate-x-1/4 translate-y-1/4 rounded-full bg-rose-glow/[0.03] blur-[180px] animate-glow-drift-alt" />
-
-      {/* Plum glow — top left */}
-      <div className="pointer-events-none absolute left-0 top-0 h-[400px] w-[400px] -translate-x-1/4 -translate-y-1/4 rounded-full bg-plum-light/10 blur-[160px] animate-glow-breathe-slow" />
+      {/* Ambient glow — layered radial gradients */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_33%,rgba(212,175,122,0.04)_0%,transparent_70%),radial-gradient(ellipse_at_100%_100%,rgba(180,130,130,0.03)_0%,transparent_60%),radial-gradient(ellipse_at_0%_0%,rgba(140,100,160,0.05)_0%,transparent_55%),radial-gradient(ellipse_at_center,#212121_0%,#1A1A1A_70%)]" />
 
       {/* Noise overlay to eliminate color banding */}
       <div

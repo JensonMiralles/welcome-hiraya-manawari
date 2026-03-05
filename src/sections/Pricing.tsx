@@ -4,11 +4,8 @@ export function Pricing() {
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
-      {/* Gold glow — center top */}
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[350px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.02] blur-[140px] animate-glow-breathe-slow" />
-
-      {/* Rose glow — bottom */}
-      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[250px] w-[400px] -translate-x-1/2 translate-y-1/2 rounded-full bg-rose-glow/[0.015] blur-[120px] animate-glow-breathe" />
+      {/* Ambient glows */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,175,122,0.02)_0%,transparent_60%),radial-gradient(ellipse_at_50%_100%,rgba(180,130,130,0.015)_0%,transparent_55%)]" />
 
       <div className="relative mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">

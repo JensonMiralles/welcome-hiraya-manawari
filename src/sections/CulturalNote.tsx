@@ -2,7 +2,7 @@ export function CulturalNote() {
   return (
     <section className="relative overflow-hidden px-6 py-20">
       {/* Warm centered glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[350px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.02] blur-[120px] animate-glow-breathe" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(212,175,122,0.02)_0%,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-3xl text-center">
         <div className="border border-champagne/[0.12] bg-gradient-to-b from-midnight-100/80 to-midnight-200/60 px-8 py-14 shadow-[0_0_60px_rgba(212,175,122,0.04)] sm:px-14">

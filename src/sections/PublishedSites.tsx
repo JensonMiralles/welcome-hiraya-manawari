@@ -4,11 +4,8 @@ export function PublishedSites() {
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 
-      {/* Champagne glow — left */}
-      <div className="pointer-events-none absolute left-0 top-1/3 h-[350px] w-[350px] -translate-x-1/4 rounded-full bg-champagne/[0.025] blur-[140px] animate-glow-breathe-slow" />
-
-      {/* Rose glow — right */}
-      <div className="pointer-events-none absolute bottom-1/4 right-0 h-[300px] w-[300px] translate-x-1/4 rounded-full bg-rose-glow/[0.025] blur-[120px] animate-glow-breathe" />
+      {/* Ambient glows */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_0%_33%,rgba(212,175,122,0.025)_0%,transparent_60%),radial-gradient(ellipse_at_100%_75%,rgba(180,130,130,0.025)_0%,transparent_60%)]" />
 
       <div className="relative mx-auto max-w-6xl">
         <div className="flex flex-col items-center text-center">

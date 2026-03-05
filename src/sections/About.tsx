@@ -1,10 +1,8 @@
 export function About() {
   return (
     <section className="relative px-6 py-32">
-      {/* Decorative glow — extends above section to blend with Hero */}
-      <div className="pointer-events-none absolute inset-x-0 -top-32 h-[400px] overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[350px] w-[600px] -translate-x-1/2 rounded-full bg-champagne/[0.02] blur-[120px] animate-glow-breathe" />
-      </div>
+      {/* Ambient glow — blends with Hero */}
+      <div className="pointer-events-none absolute inset-x-0 -top-32 h-[400px] bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,175,122,0.02)_0%,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">

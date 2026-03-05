@@ -5,7 +5,7 @@ export function Customization() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-200/50 to-midnight" />
 
       {/* Plum glow — right */}
-      <div className="pointer-events-none absolute right-0 top-1/4 h-[350px] w-[350px] translate-x-1/4 rounded-full bg-plum-light/8 blur-[120px] animate-glow-breathe" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_100%_25%,rgba(140,100,160,0.05)_0%,transparent_55%)]" />
 
       <div className="relative mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center">

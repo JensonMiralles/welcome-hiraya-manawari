@@ -10,11 +10,8 @@ export function OurStory() {
       {/* Dark overlay gradient */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight/80 to-midnight" />
 
-      {/* Champagne glow — left */}
-      <div className="pointer-events-none absolute left-0 top-1/3 h-[350px] w-[350px] -translate-x-1/4 rounded-full bg-champagne/[0.03] blur-[120px] animate-glow-breathe" />
-
-      {/* Plum glow — right */}
-      <div className="pointer-events-none absolute right-0 bottom-1/4 h-[300px] w-[300px] translate-x-1/4 rounded-full bg-plum-light/8 blur-[120px] animate-glow-breathe" />
+      {/* Ambient glows */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_0%_33%,rgba(212,175,122,0.03)_0%,transparent_60%),radial-gradient(ellipse_at_100%_75%,rgba(140,100,160,0.05)_0%,transparent_55%)]" />
 
       <div className="relative mx-auto max-w-5xl">
         {/* Section header */}
