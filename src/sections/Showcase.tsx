@@ -1,6 +1,6 @@
 export function Showcase() {
   return (
-    <section className="relative overflow-hidden px-6 py-32">
+    <section id="showcase" className="relative overflow-hidden px-6 py-32">
       {/* Warm background band */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-midnight via-midnight-300 to-midnight" />
 

@@ -1,6 +1,6 @@
 export function CulturalNote() {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section id="meaning" className="relative overflow-hidden px-6 py-20">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"

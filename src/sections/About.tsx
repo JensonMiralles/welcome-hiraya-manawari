@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section className="relative px-6 py-32">
+    <section id="features" className="relative px-6 py-32">
       {/* Ambient glow — blends with Hero */}
       <div className="pointer-events-none absolute inset-x-0 -top-32 h-[400px] bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,175,122,0.02)_0%,transparent_70%)]" />
 

@@ -1,6 +1,6 @@
 export function OurStory() {
   return (
-    <section className="relative overflow-hidden px-6 py-32">
+    <section id="our-story" className="relative overflow-hidden px-6 py-32">
       {/* Background image */}
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"

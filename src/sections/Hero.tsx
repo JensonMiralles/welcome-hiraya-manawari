@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
+    <section id="hero" className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
       {/* Background image */}
       <div
         className="animate-fade-in pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0"
