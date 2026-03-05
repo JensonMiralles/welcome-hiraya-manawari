@@ -92,7 +92,9 @@ export function PublishedSites() {
             Your invitation could be next.
           </p>
           <a
-            href="#pricing"
+            href="https://app.hirayaweddings.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-5 border border-champagne/30 bg-champagne/[0.06] px-8 py-3 text-xs uppercase tracking-[0.2em] text-champagne transition-all duration-300 hover:border-champagne/50 hover:bg-champagne/[0.12]"
           >
             Start Creating Yours
