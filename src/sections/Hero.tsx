@@ -3,7 +3,7 @@ export function Hero() {
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
       {/* Background image */}
       <div
-        className="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="animate-fade-in pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0"
         style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}
       />
 

@@ -38,6 +38,10 @@ module.exports = {
         sans: ['Raleway', 'system-ui', 'sans-serif'],
       },
       keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
         'fade-in-up': {
           '0%': { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
@@ -63,6 +67,7 @@ module.exports = {
         },
       },
       animation: {
+        'fade-in': 'fade-in 1.8s ease-out forwards',
         'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
         'fade-in-up-delay-1': 'fade-in-up 0.8s ease-out 0.15s forwards',
         'fade-in-up-delay-2': 'fade-in-up 0.8s ease-out 0.3s forwards',
