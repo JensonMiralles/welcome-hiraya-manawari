@@ -40,24 +40,8 @@ export function Hero() {
         </p>
 
         <a
-          href={
-            import.meta.env.VITE_SUBDOMAIN
-              ? import.meta.env.VITE_SUBDOMAIN
-              : "#pricing"
-          }
+          href="https://app.hirayaweddings.com"
           className="mt-12 animate-fade-in-up-delay-3 border border-champagne/40 bg-champagne/[0.05] px-8 py-3 text-xs font-medium uppercase tracking-[0.25em] text-champagne opacity-0 transition-all duration-500 hover:border-champagne hover:bg-champagne/15 hover:shadow-[0_0_40px_rgba(212,175,122,0.15)]"
-          onClick={(e) => {
-            const href = import.meta.env.VITE_SUBDOMAIN
-              ? import.meta.env.VITE_SUBDOMAIN
-              : "#pricing";
-            if (href.startsWith("#")) {
-              e.preventDefault();
-              const element = document.querySelector(href);
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-              }
-            }
-          }}
         >
           Get Started For Free
         </a>
