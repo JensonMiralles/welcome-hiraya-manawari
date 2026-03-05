@@ -99,9 +99,9 @@ const features = [
     ),
   },
   {
-    title: "Custom Domains",
+    title: "Personal Subdomain",
     description:
-      "Share your invitation on a personal domain — like juanandmaria.ph.",
+      "Share your invitation on your own link — like juanandmaria.hirayaweddings.com.",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -110,8 +110,8 @@ const features = [
         strokeWidth="1"
         className="h-6 w-6"
       >
-        <circle cx="12" cy="12" r="9" />
-        <path d="M3 12h18M12 3c-2.5 3-4 6-4 9s1.5 6 4 9c2.5-3 4-6 4-9s-1.5-6-4-9z" />
+        <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" />
+        <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" />
       </svg>
     ),
   },

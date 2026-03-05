@@ -79,7 +79,7 @@ const showcaseSections = [
     title: "Hero",
     description:
       "A stunning full-screen welcome with your names, wedding date, monogram, and a countdown timer to your big day.",
-    variants: "3 styles",
+    variants: "4 styles",
   },
   {
     icon: "\u2661",
@@ -111,7 +111,7 @@ const showcaseSections = [
     title: "Photo & Video Gallery",
     description:
       "Showcase your engagement photos or prenup video in a bento grid layout with a full-screen lightbox viewer.",
-    variants: "2 styles",
+    variants: "4 styles",
   },
   {
     icon: "\u25FB",
@@ -147,6 +147,12 @@ const showcaseSections = [
     variants: "3 styles",
   },
   {
+    icon: "\u2740",
+    title: "Gift Registry",
+    description:
+      "Let guests know where you're registered. Link to gift registries or provide bank details for monetary gifts.",
+  },
+  {
     icon: "\u26BF",
     title: "Invite Code Protection",
     description:
@@ -155,8 +161,8 @@ const showcaseSections = [
 ];
 
 const showcaseStats = [
-  { value: "19", label: "Section Variants" },
+  { value: "23", label: "Section Variants" },
   { value: "8", label: "Font Presets" },
-  { value: "3", label: "Color Themes" },
+  { value: "5", label: "Color Themes" },
   { value: "40+", label: "Timeline Icons" },
 ];

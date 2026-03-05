@@ -84,6 +84,18 @@ export function Pricing() {
                       Starts at{" "}
                     </span>
                   )}
+                  {tier.originalPrice && (
+                    <div className="mb-1">
+                      <span className="text-[10px] uppercase tracking-[0.15em] text-champagne/50">
+                        Introductory Price
+                      </span>
+                    </div>
+                  )}
+                  {tier.originalPrice && (
+                    <span className="mr-2 font-serif text-lg text-warm-gray/50 line-through">
+                      {tier.originalPrice}
+                    </span>
+                  )}
                   <span className="bg-gradient-to-b from-champagne-light to-champagne-dark bg-clip-text font-serif text-3xl font-light text-transparent">
                     {tier.price}
                   </span>
@@ -190,6 +202,7 @@ type PricingTier = {
   subtitle: string;
   meaning: string;
   price: string;
+  originalPrice?: string;
   startingAt?: boolean;
   popular?: boolean;
   badge?: string;
@@ -201,50 +214,53 @@ const pricingTiers: PricingTier[] = [
     name: "Simula",
     subtitle: "Essential",
     meaning: '"The Beginning"',
-    price: "\u20B11,499",
+    price: "\u20B1999",
+    originalPrice: "\u20B11,499",
     features: [
-      { label: "Single-page invitation", included: true },
-      { label: "Pre-built template", included: true },
-      { label: "RSVP form", included: true },
+      { label: "All sections & editing", included: true },
+      { label: "Full customization", included: true },
+      { label: "Advanced RSVP management", included: true },
       { label: "Up to 100 guests", included: true },
-      { label: "Basic color customization", included: true },
-      { label: "Multi-page layout", included: false },
-      { label: "Custom domain", included: false },
-      { label: "Photo gallery", included: false },
+      { label: "RSVP export", included: true, detail: "CSV" },
+      { label: "Gallery photos", included: true, detail: "6" },
+      { label: "Subdomain", included: true },
+      { label: "1 year duration", included: true },
     ],
   },
   {
     name: "Diwa",
     subtitle: "Signature",
     meaning: '"The Spirit of Love"',
-    price: "\u20B12,999",
+    price: "\u20B11,999",
+    originalPrice: "\u20B12,999",
     popular: true,
     badge: "Most Popular",
     features: [
-      { label: "Multi-page invitation", included: true },
-      { label: "Premium templates", included: true },
-      { label: "RSVP with meal choices", included: true },
-      { label: "Up to 300 guests", included: true },
-      { label: "Full color & font customization", included: true },
-      { label: "Photo gallery", included: true },
-      { label: "Background music", included: true },
-      { label: "Custom domain", included: false },
+      { label: "All sections & editing", included: true },
+      { label: "Full customization", included: true },
+      { label: "Advanced RSVP management", included: true },
+      { label: "Up to 150 guests", included: true },
+      { label: "RSVP export", included: true, detail: "CSV" },
+      { label: "Gallery photos", included: true, detail: "12" },
+      { label: "Subdomain", included: true },
+      { label: "1 year duration", included: true },
     ],
   },
   {
     name: "Mayumi",
     subtitle: "Grand",
     meaning: '"Grace and Beauty"',
-    price: "\u20B13,999",
+    price: "\u20B12,999",
+    originalPrice: "\u20B13,999",
     features: [
-      { label: "Multi-page invitation", included: true },
-      { label: "All premium templates", included: true },
+      { label: "All sections & editing", included: true },
+      { label: "Full customization", included: true },
       { label: "Advanced RSVP management", included: true },
-      { label: "Up to 500 guests", included: true },
-      { label: "Full customization suite", included: true },
-      { label: "Photo & video gallery", included: true },
-      { label: "Background music", included: true },
-      { label: "Custom domain", included: true },
+      { label: "Unlimited guests", included: true },
+      { label: "RSVP export", included: true, detail: "CSV" },
+      { label: "Gallery photos", included: true, detail: "24" },
+      { label: "Subdomain", included: true },
+      { label: "2 year duration", included: true },
     ],
   },
   {
@@ -255,14 +271,14 @@ const pricingTiers: PricingTier[] = [
     startingAt: true,
     badge: "Fully Custom",
     features: [
-      { label: "Fully custom design", included: true },
-      { label: "Dedicated designer", included: true },
       { label: "Unlimited guests", included: true },
+      { label: "Unlimited photos", included: true },
+      { label: "Custom domain", included: true },
+      { label: "2 year duration", included: true },
+      { label: "Bespoke animations & effects", included: true },
+      { label: "Dedicated design consultation", included: true },
       { label: "All Grand features", included: true },
-      { label: "Custom animations", included: true },
       { label: "Priority support", included: true },
-      { label: "Multiple event pages", included: true },
-      { label: "White-glove onboarding", included: true },
     ],
   },
 ];

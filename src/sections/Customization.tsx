@@ -96,11 +96,13 @@ const customizationFeatures: {
     ),
     options: [
       "Timeless",
-      "Classic",
+      "Classic Sophistication",
+      "Contemporary Classic",
       "Editorial",
-      "Romantic",
-      "Art Deco",
       "Modern Minimal",
+      "Romantic",
+      "Garden Party",
+      "Art Deco",
     ],
   },
   {
@@ -119,7 +121,7 @@ const customizationFeatures: {
         <circle cx="12" cy="12" r="4" />
       </svg>
     ),
-    options: ["Elegant Classic", "Floral Garden", "Modern Minimal"],
+    options: ["Elegant Classic", "Floral Garden", "Rustic Garden", "Filipino Heritage", "Modern Minimal"],
   },
   {
     title: "Templates",
