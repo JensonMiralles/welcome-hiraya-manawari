@@ -14,8 +14,9 @@ export function Customization() {
             Make It Yours
           </h2>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-warm-gray">
-            Every couple is unique. Customize every detail — from fonts and
-            colors to section order and layout — using our drag-and-drop editor.
+            Every couple is unique — and your wedding website should be too.
+            Customize every detail from fonts and colors to layout and content.
+            If you can imagine it, you can build it.
           </p>
         </div>
 
@@ -52,6 +53,10 @@ export function Customization() {
             </div>
           ))}
         </div>
+
+        <p className="mt-16 text-center font-serif text-base italic tracking-wide text-champagne/60">
+          Your imagination is the only limit.
+        </p>
       </div>
     </section>
   );
