@@ -37,7 +37,7 @@
 
     <!-- Prevent indexing on non-production environments -->
     <script>
-      if (window.location.hostname !== 'hirayamanawari.wedding') {
+      if (!window.location.hostname.endsWith('hirayaweddings.com')) {
         var meta = document.createElement('meta');
         meta.name = 'robots';
         meta.content = 'noindex, nofollow';
