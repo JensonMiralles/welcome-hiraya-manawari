@@ -8,7 +8,7 @@
   "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "/hiraya-icon.svg",
+      "src": "/hiraya-icon.png",
       "sizes": "any",
       "type": "image/svg+xml"
     }
