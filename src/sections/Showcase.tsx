@@ -49,6 +49,75 @@ export function Showcase() {
           ))}
         </div>
 
+        {/* Responsive design highlight */}
+        <div className="mt-20 flex flex-col items-center gap-10 border border-white/[0.06] bg-gradient-to-br from-midnight-100/60 to-midnight-200/40 p-10 sm:flex-row sm:p-14">
+          <div className="flex shrink-0 items-end gap-3">
+            {/* Desktop frame */}
+            <div className="relative flex h-[120px] w-[160px] flex-col overflow-hidden rounded-sm border border-champagne/20 bg-midnight-200/80 sm:h-[140px] sm:w-[190px]">
+              <div className="flex h-3 items-center gap-1 border-b border-white/[0.06] px-1.5">
+                <span className="h-1 w-1 rounded-full bg-champagne/30" />
+                <span className="h-1 w-1 rounded-full bg-champagne/20" />
+                <span className="h-1 w-1 rounded-full bg-champagne/15" />
+              </div>
+              <div className="flex flex-1 flex-col items-center justify-center gap-1.5 p-3">
+                <div className="h-1 w-12 rounded-full bg-champagne/25" />
+                <div className="h-1 w-16 rounded-full bg-champagne/15" />
+                <div className="mt-1 h-6 w-full rounded-sm bg-champagne/[0.06]" />
+                <div className="flex w-full gap-1">
+                  <div className="h-4 flex-1 rounded-sm bg-champagne/[0.06]" />
+                  <div className="h-4 flex-1 rounded-sm bg-champagne/[0.06]" />
+                </div>
+              </div>
+            </div>
+            {/* Mobile frame */}
+            <div className="relative flex h-[100px] w-[50px] flex-col overflow-hidden rounded-sm border border-champagne/20 bg-midnight-200/80 sm:h-[110px] sm:w-[55px]">
+              <div className="flex h-2 items-center justify-center border-b border-white/[0.06]">
+                <span className="h-0.5 w-3 rounded-full bg-champagne/20" />
+              </div>
+              <div className="flex flex-1 flex-col items-center justify-center gap-1 p-1.5">
+                <div className="h-0.5 w-5 rounded-full bg-champagne/25" />
+                <div className="h-0.5 w-6 rounded-full bg-champagne/15" />
+                <div className="mt-0.5 h-4 w-full rounded-sm bg-champagne/[0.06]" />
+                <div className="h-3 w-full rounded-sm bg-champagne/[0.06]" />
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center sm:text-left">
+            <h3 className="font-serif text-xl font-light tracking-wide text-ivory sm:text-2xl">
+              Beautiful on Every Screen
+            </h3>
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-warm-gray">
+              Every invitation is fully responsive — designed to look stunning
+              whether your guests open it on a desktop, tablet, or phone. No
+              pinching, no zooming, just a seamless experience from any device.
+            </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-4 sm:justify-start">
+              <span className="flex items-center gap-2 text-xs tracking-wide text-champagne/70">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-4 w-4">
+                  <rect x="2" y="3" width="20" height="14" rx="1" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+                Desktop
+              </span>
+              <span className="flex items-center gap-2 text-xs tracking-wide text-champagne/70">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-4 w-4">
+                  <rect x="4" y="2" width="16" height="20" rx="2" />
+                  <path d="M10 18h4" />
+                </svg>
+                Tablet
+              </span>
+              <span className="flex items-center gap-2 text-xs tracking-wide text-champagne/70">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="h-4 w-4">
+                  <rect x="6" y="2" width="12" height="20" rx="2" />
+                  <path d="M10 18h4" />
+                </svg>
+                Mobile
+              </span>
+            </div>
+          </div>
+        </div>
+
         {/* Stats row */}
         <div className="mt-20 grid grid-cols-2 gap-6 sm:grid-cols-4">
           {showcaseStats.map((stat) => (
