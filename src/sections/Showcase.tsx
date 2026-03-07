@@ -11,7 +11,7 @@ export function Showcase() {
         <div className="flex flex-col items-center text-center">
           <div className="h-px w-16 bg-gradient-to-r from-champagne/20 via-champagne/50 to-champagne/20" />
           <h2 className="mt-8 font-serif text-3xl font-light tracking-wide text-ivory sm:text-4xl">
-            Everything Your Invitation Needs
+            Everything Your Wedding Invitation Needs
           </h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-warm-gray sm:text-base">
             From the hero that welcomes your guests to the closing that leaves

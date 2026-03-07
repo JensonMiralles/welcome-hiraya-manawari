@@ -18,7 +18,7 @@ export function Hero() {
 
       <div className="relative z-10 flex flex-col items-center text-center">
         <p className="animate-fade-in-up text-xs font-medium uppercase tracking-[0.35em] text-champagne/70 opacity-0">
-          Digital Wedding Invitations
+          Digital Wedding Invitations — Philippines
         </p>
 
         <h1 className="mt-6 animate-fade-in-up-delay-1 font-serif text-5xl font-light leading-tight tracking-wide text-champagne opacity-0 sm:text-6xl md:text-7xl lg:text-8xl">

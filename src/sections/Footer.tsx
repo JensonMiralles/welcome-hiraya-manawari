@@ -55,6 +55,8 @@ export function Footer() {
             Made by Filipinos, for Filipinos.
           </p>
           <div className="flex items-center gap-3 text-[11px] text-warm-gray">
+            <a href="#faq" className="hover:text-champagne transition-colors">FAQ</a>
+            <span className="text-warm-gray/40">&middot;</span>
             <Link to="/terms" className="hover:text-champagne transition-colors">Terms</Link>
             <span className="text-warm-gray/40">&middot;</span>
             <Link to="/privacy" className="hover:text-champagne transition-colors">Privacy</Link>

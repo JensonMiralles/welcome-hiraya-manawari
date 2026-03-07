@@ -10,6 +10,7 @@ import { Customization } from "./sections/Customization";
 import { PublishedSites } from "./sections/PublishedSites";
 import { CulturalNote } from "./sections/CulturalNote";
 import { Pricing } from "./sections/Pricing";
+import { FAQ } from "./sections/FAQ";
 import { Footer } from "./sections/Footer";
 import { TermsPage } from "./pages/legal/TermsPage";
 import { PrivacyPage } from "./pages/legal/PrivacyPage";
@@ -25,6 +26,7 @@ function HomePage() {
       <PublishedSites />
       <CulturalNote />
       <Pricing />
+      <FAQ />
       <Footer />
     </main>
   );
