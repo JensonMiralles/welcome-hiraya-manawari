@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 export function Footer() {
   return (
     <footer className="relative overflow-hidden px-6 pb-12 pt-20">
@@ -52,6 +54,11 @@ export function Footer() {
           <p className="font-serif text-xs italic text-warm-gray/60">
             Made by Filipinos, for Filipinos.
           </p>
+          <div className="flex items-center gap-3 text-[11px] text-warm-gray">
+            <Link to="/terms" className="hover:text-champagne transition-colors">Terms</Link>
+            <span className="text-warm-gray/40">&middot;</span>
+            <Link to="/privacy" className="hover:text-champagne transition-colors">Privacy</Link>
+          </div>
           <p className="text-[11px] tracking-wide text-warm-gray">
             &copy; {new Date().getFullYear()} Hiraya Manawari. All rights
             reserved.
